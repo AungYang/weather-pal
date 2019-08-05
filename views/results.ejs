@@ -27,9 +27,9 @@
 <!-- uv index, suggestion, and temp -->
 <div class="row">
     <div class="col-sm-4">
-        <h4 class="uv-info">UV Indexⓘ
+        <h3 class="uv-info">UV Indexⓘ
             <span class="tooltiptext"> UV index is an international standard measurement of the strength of sunburn-producing
-                ultraviolet radiation</span></h4>
+                ultraviolet radiation</span></h3>
        <p class="suggest-text"><%= data["currently"]["uvIndex"]%> </p> 
         
 
@@ -49,17 +49,49 @@
 
     <div class="col-sm-4">
 
-        <h4>Helpful Advice</h4>
+        <h3>Helpful Advice</h3>
         <% if(data.currently.temperature > 69) {%>
-        <p class="suggest-text">its hot</p>
+      
+            <ul class="suggest-list">
+                <li>Stay hydrated</li>
+                <li>Wear sunscreen</li>
+                <li>Dress lightly</li>
+                <li>Put on some shades</li>
+            </ul>
+
+
         <%} else {%>
-        <p class="suggest-text">its cold</p>
+            <ul class="suggest-list">
+                <li>Wrap yourself in clothes</li>
+                <li>Have a warm cup of coffee</li>
+                <li>Consider a cardio workout</li>
+                <li>Apply lip balm on your lips</li>
+            </ul>
         <%}%>
     </div>
 
 </div>
 
 </div>
+
+
+<div class="other">
+
+
+<i class="fas fa-wind"></i>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
 
 
 <% include partials/footer %>

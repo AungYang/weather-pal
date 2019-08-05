@@ -53,7 +53,7 @@ h1{
     color:white;
 }
 
-h4{
+h3{
     color: white;
     text-align: center;
 }
@@ -64,7 +64,13 @@ h4{
     font-size: 15px;
 }
 
-
+.suggest-list{
+    color:white;
+    text-align: center;
+    font-size: 15px;
+    list-style: none;
+    
+}
 
 .uv-info .tooltiptext {
   visibility: hidden;
@@ -90,6 +96,15 @@ h4{
 
 
 
+.fa-wind{
+   font-size: 88px;
+   display: block;
+   text-align: center;
+   color: #00fff7; 
+}
+
+
+
 footer a{
   color: white;
   text-align: center;  
@@ -106,3 +121,4 @@ a:hover{
     color:white;
     text-decoration: none;
 }
+
