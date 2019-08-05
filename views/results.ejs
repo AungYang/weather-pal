@@ -1,0 +1,72 @@
+<% include partials/header %>
+
+
+
+
+<!-- Introductory header -->
+<div class="header">
+<h1>Timezone: <%=data["timezone"]%></h1><br>
+
+
+<p class="intro_text"> Overall: <%= data["currently"]["summary"]%> | Currently: <%= data["currently"]["icon"]%></p> <br>
+
+</div>
+
+
+<!-- temperature wrap, uv, suggestions -->
+<div class="temperature">
+
+<!--sunny or snowflake icon -->
+<% if(data.currently.temperature > 69) {%>
+<i class="far fa-sun"></i>
+<%} else {%>
+<i class="far fa-snowflake"></i>
+<%}%>
+
+
+<!-- uv index, suggestion, and temp -->
+<div class="row">
+    <div class="col-sm-4">
+        <h4 class="uv-info">UV Indexⓘ
+            <span class="tooltiptext"> UV index is an international standard measurement of the strength of sunburn-producing
+                ultraviolet radiation</span></h4>
+       <p class="suggest-text"><%= data["currently"]["uvIndex"]%> </p> 
+        
+
+    <% if(data.currently.uvIndex >= 8) {%>
+        <button type="button" class="btn btn-danger">Dangerous</button>
+    <%} else if(data.currently.uvIndex >= 4){%>
+        <button type="button" class="btn btn-warning">Be Cautious</button>
+    <%} else {%>
+        <button type="button" class="btn btn-success">Safe & Sound</button>
+    <%}%>
+
+    </div>
+
+    <div class="col-sm-4">
+        <p class="fahrenheit_label"><%= data["currently"]["temperature"]%> °F</p>
+    </div>
+
+    <div class="col-sm-4">
+
+        <h4>Helpful Advice</h4>
+        <% if(data.currently.temperature > 69) {%>
+        <p class="suggest-text">its hot</p>
+        <%} else {%>
+        <p class="suggest-text">its cold</p>
+        <%}%>
+    </div>
+
+</div>
+
+</div>
+
+
+<% include partials/footer %>
+
+
+
+
+
+<!-- The temperature is <%= data["currently"]["temperature"]%> Fahrenheit. <br> -->
+<!-- the precip is <%= data["currently"]["precipProbability"]%> -->
