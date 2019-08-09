@@ -1,0 +1,22 @@
+{
+  "name": "apiprac",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": "8"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.6.2",
+    "express": "^4.17.1",
+    "firebase": "^6.3.4",
+    "firebase-tools": "^7.2.2",
+    "request": "^2.88.0",
+    "tools": "0.0.0"
+  }
+}

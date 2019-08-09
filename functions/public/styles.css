@@ -1,0 +1,172 @@
+
+body{
+    font-size: 12px;
+}
+
+html{
+    height: 100%;
+    width: 100%;
+    
+}
+
+
+h1{
+    text-align: center;
+}
+
+.lead{
+    text-align: center;
+    font-style: oblique;
+}
+
+.intro_text{
+    text-align: center;
+    font-size: 20px;
+}
+
+
+.header{
+    background: #e9ecef;
+    padding-top: 20px; 
+}
+
+.temperature{
+    background: #313134;
+    padding: 45px;
+}
+
+.fa-sun{
+   font-size: 88px;
+   display: block;
+   text-align: center;
+   color: red; 
+}
+
+.fa-snowflake{
+   font-size: 88px;
+   display: block;
+   text-align: center;
+   color: #00fff7; 
+}
+
+.fahrenheit_label{
+    text-align: center;
+    font-size: 100px;
+    font-weight: 500;
+    color:white;
+}
+
+h3{
+    color: white;
+    text-align: center;
+}
+
+.suggest-uv-text{
+    color:white;
+    text-align: center;
+    font-size: 15px;
+}
+
+.suggest-list{
+   color:white;
+   margin-left: 27%;
+   font-size: 15px;
+    
+}
+
+.uv-info .tooltiptext {
+  visibility: hidden;
+  width: 200px;
+  font-size: 12px;
+  background-color: #e9ecef;
+  color: black;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 5px 5px 5px;
+  position: absolute;
+  z-index: 1;
+}
+.uv-info:hover .tooltiptext {
+  visibility: visible;
+}
+
+.btn{
+    display:block;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+.other{
+    background: white;
+    padding-top: 15px;
+    padding-bottom: 55px;
+}
+
+
+
+
+.fa-wind{
+   font-size: 88px;
+   display: block;
+   text-align: center;
+   color: lightgrey; 
+}
+
+.wind-h3{
+    color: #808080;
+}
+
+
+.windandrain-list{
+ margin-left: 30%;
+ font-size: 15px;
+ color: black;
+}
+
+
+
+.fa-cloud-rain{
+   font-size: 88px;
+   display: block;
+   text-align: center;
+   color: lightskyblue; 
+}
+
+
+
+.rain-h3{
+    color: #007fb9;
+}
+
+
+footer{
+  color: white;
+  text-align: center;  
+  display: block;
+  font-size: 15px;
+  padding: 15px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #313134;
+}
+
+footer a {
+    color: white;
+}
+
+.owner{
+    color: yellowgreen;
+}
+
+.owner:hover{
+    color: green;
+}
+
+a:hover{
+    color:white;
+    text-decoration: none;
+}
+
